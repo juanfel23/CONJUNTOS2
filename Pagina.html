@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<head>
+    <title>conjuntos</title>
+    <script src="./codigo.js" defer></script>
+</head>
+
+<body>
+    <h2>Interseccion</h2>
+
+    La Intersección de dos o más conjuntos es el conjunto 
+    formado por los elementos que tienen en común ambos conjuntos
+    </p>
+    <label class="form__label">A = </label>
+    <input type="text" class="form__input interseccion interseccion__a" />
+    </div>
+    <label class="form__label">B = </label>
+    <input type="text" class="form__input interseccion interseccion__b" />
+    </div>
+    <input type="button" value="Intersectar" class="form__btn" onclick="interseccion()" />
+    <label class="form__label">A∩B = </label>
+    <textarea type="text" class="form__input interseccion_resultado" readonly></textarea>
+    </div>
+    <div class="form__group">
+        <input type="button" value="rjemplo 1" class="form__btn" onclick="ejemplo(1, '.interseccion')" />
+        <input type="button" value="ejemplo 2" class="form__btn" onclick="ejemplo(2, '.interseccion')" />
+        <input type="button" value="reiniciar" class="form__btn" onclick="reiniciar('.interseccion')" />
+    </div>
+
+    <h2>Union</h2>
+    La Unión de dos o más conjuntos es el conjunto 
+    formado por todos los elementos que pertenecen a ambos conjuntos.
+    </p>
+    <label class="form__label">A = </label>
+    <input type="text" class="form__input union union__a" />
+    </div>
+
+    <label class="form__label">B = </label>
+    <input type="text" class="form__input union union__b" />
+    </div>
+    <input type="button" value="Unir" class="form__btn" onclick="union()" />
+    <label class="form__label">A∪B = </label>
+    <textarea type="text" class="form__input union union_resultado" readonly></textarea>
+    </div>
+    <div class="form__group">
+
+        <input type="button" value="ejemplo 1" class="form__btn" onclick="ejemplo(1, '.union')" />
+        <input type="button" value="ejemplo 2" class="form__btn" onclick="ejemplo(2, '.union')" />
+        <input type="button" value="reiniciar" class="form__btn" onclick="reiniciar('.union')" />
+    </div>
+
+    <h2>Diferencia</h2>
+
+    La DIFERENCIA DE CONJUNTOS es la operación binaria, en la cual dos conjuntos cualesquiera,
+     A y B, especifican cuales elementos de uno de los conjuntos no están en el otro formando un nuevo 
+     conjunto llamado DIFERENCIA
+    </p>
+        <label class="form__label">A = </label>
+        <input type="text" class="form__input diferencia diferencia__a" />
+    </div>
+    <label class="form__label">B = </label>
+    <input type="text" class="form__input diferencia diferencia__b" />
+    </div>
+    <input type="button" value="Diferencia" class="form__btn" onclick="diferencia()" />
+
+    <label class="form__label">A-B = </label>
+    <textarea type="text" class="form__input diferencia diferencia__resultado diferencia__resultado--a" readonly></textarea>
+    </div>
+    <label class="form__label">B-A = </label>
+    <textarea type="text" class="form__input diferencia diferencia__resultado diferencia__resultado--b" readonly></textarea>
+    </div>
+    <div class="form__group">
+        <input type="button" value="ejemplo 1" class="form__btn" onclick="ejemplo(1, '.diferencia')" />    
+        <input type="button" value="ejemplo 2" class="form__btn" onclick="ejemplo(2, '.diferencia')" />
+        <input type="button" value="reiniciar" class="form__btn" onclick="reiniciar('.diferencia')" />
+    </div>
+
+    <h2>Complemento</h2>
+    En Teoría de Conjuntos se define un Conjunto Complementario (Complemento de un Conjunto)
+     de un conjunto A al subconjunto del conjunto universal cuyos elementos no pertenecen a A.
+    </p>
+            <label class="form__label">A = </label>
+            <input type="text" class="form__input complemento complemento__a" />
+        </div>
+            <label class="form__label">U = </label>
+            <input type="text" class="form__input complemento complemento__b" />
+        </div>
+        <input type="button" value="Complemento" class="form__btn" onclick="complemento()" />
+            <label class="form__label">A<sup>c</sup> = </label>
+            <textarea type="text" class="form__input complemento complemento__resultado" readonly></textarea>
+        </div>
+        <div class="form__group">
+            <input type="button" value="ejemplo 1" class="form__btn" onclick="ejemplo(3, '.complemento')" />
+            <input type="button" value="ejemplo 2" class="form__btn" onclick="ejemplo(4, '.complemento')" />
+            <input type="button" value="reiniciar" class="form__btn" onclick="reiniciar('.complemento')" />
+        </div>
+</body>
+
+</html>
